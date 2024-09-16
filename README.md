@@ -1,6 +1,6 @@
 # nyc-topology-db
 
-What if we added New York City geographies to a PostGIS topology?  Could we build a revese geocoder?
+What if we added New York City geographies to a PostGIS topology?  Could we build a reverse geocoder?
 
 Friends, this is our reverse goat, our rules, the trick is never to be afraid.
 
