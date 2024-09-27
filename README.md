@@ -10,7 +10,7 @@ Friends, this is our reverse goat, our rules, the trick is never to be afraid.
 
 We will create a database named "nyctopo."  We'll load the data under \data into a schema named "nyc." 
 
-Then we'll run a sibling set of topology data loading from \topo-data. This will create a topology named "gotham."  For each dataset loaded we will add a column named "topo," populated with topogeom pointers to the gotham primitives.    
+Then we'll run a sibling set of topology data loading from \topo-data. This will create a topology named "gotham.  For each dataset loaded we will add a column named "topo," populated with topogeom pointers to the gotham primitives.    
 
 ```shell
 $ export NYCTOPOPASSWORD==<samplepassword1>
@@ -33,16 +33,16 @@ $ ./test-nyctopo.sh
 
 ## Sample Application Setup
 
-We'll attempt to meet the requirements of applications with database views.  More thinking required here on schemas, users, and privileges. 
+We'll attempt to meet the requirements of applications by creating database views.  More thinking required here on schemas, users, and privileges. 
 
 ```shell
+$ export MLPASSWORD=<samplepassword2>
 $ export PGUSER=nyctopo
 $ export PGPASSWORD=<samplepassword1>
 $ export PGHOST=****
 $ export PGDATABASE=nyctopo
 $ ./setup-mobile_latlong.sh
 ```
-
 
 ## Teardown 
 
